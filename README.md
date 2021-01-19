@@ -1,3 +1,3 @@
 # Kokoa Clone project
 
-CSS got so much better
+Cloning project #1
