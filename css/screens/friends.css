@@ -41,7 +41,40 @@
     visibility: hidden;
   }
 }
+@keyframes kokoa {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.8);
+  }
+  90% {
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
+#splash-screen > div {
+  position: relative;
+  opacity: 0;
+  animation: kokoa 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+#splash-screen span {
+  top: 45px;
+  left: 22px;
+  z-index: 1;
+  position: absolute;
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--yellow);
+}
 #splash-screen {
   background-color: var(--yellow);
   position: absolute;
@@ -53,6 +86,6 @@
   justify-content: center;
   align-items: center;
   font-size: 140px;
-  animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 1.8s;
+  animation: hideSplashScreen 1s ease-in-out forwards;
+  animation-delay: 1.5s;
 }

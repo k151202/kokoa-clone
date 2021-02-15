@@ -33,7 +33,7 @@
   border-radius: 20px;
   background-color: #92a4b2;
   color: white;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 300;
   margin-bottom: 25px;
 }
@@ -84,6 +84,44 @@
 }
 .message-row--own .message__info {
   flex-direction: row-reverse;
+}
+@keyframes chatAppear1 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes chatAppear2 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.message-row--other {
+  opacity: 0;
+  animation: chatAppear1 0.4s ease-in-out forwards;
+  animation-delay: 2s;
+}
+.message-row--own {
+  opacity: 0;
+  animation: chatAppear2 0.4s ease-in-out forwards;
+  animation-delay: 3s;
 }
 .reply {
   position: fixed;

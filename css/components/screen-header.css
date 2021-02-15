@@ -26,3 +26,47 @@
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 2s linear infinite;
 }
+
+@keyframes swing {
+  15% {
+    transform: translateX(5px);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  65% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  will-change: transform;
+  animation: swing 1s ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.screen-header__icons .fa-search:hover {
+  will-change: transform;
+  animation: scale 0.5s linear;
+}

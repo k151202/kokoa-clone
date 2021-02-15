@@ -13,7 +13,7 @@
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span id="time">18:43</span>
       </div>
       <div class="status-bar__column">
         <i class="fas fa-lock"></i>
@@ -51,12 +51,66 @@
           </div>
           <div class="settings__setting-column"></div>
         </li>
-        <li class="settings__setting">
+        <li class="settings__setting settings__border">
           <div class="settings__setting-column">
             <i class="fas fa-info-circle"></i>
             <span>Version</span>
           </div>
           <div class="settings__setting-column">Latest Version</div>
+        </li>
+      </ul>
+      <hr />
+      <ul class="settings-list settings-list2">
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-lock"></i>
+            <span>Privacy</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-bell"></i>
+            <span>Notifications</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-user"></i>
+            <span>Friends</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-comment"></i>
+            <span>Chats</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="far fa-lightbulb"></i>
+            <span>Display</span>
+            <span class="new-badge badge">N</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-brush"></i>
+            <span>Themes</span>
+            <span class="new-badge badge">N</span>
+          </div>
+          <div class="settings__setting-column">Default Theme</div>
+        </li>
+        <li class="settings__setting">
+          <div class="settings__setting-column">
+            <i class="fas fa-phone"></i>
+            <span>Call</span>
+          </div>
+          <div class="settings__setting-column"></div>
         </li>
       </ul>
     </main>
@@ -94,5 +148,6 @@
       src="https://kit.fontawesome.com/ed92b8d94d.js"
       crossorigin="anonymous"
     ></script>
+    <script src="time.js"></script>
   </body>
 </html>
