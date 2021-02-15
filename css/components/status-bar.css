@@ -5,8 +5,11 @@
   width: 100%;
   justify-content: center;
   padding: 5px 3px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
+}
+.status-bar__chat {
+  background-color: rgba(171, 192, 208, 0.8);
 }
 .status-bar__column {
   width: 33%;
