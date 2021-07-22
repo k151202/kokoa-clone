@@ -1,3 +1,3 @@
-# Kokoa Clone project
+# Kakao Talk Front-end Cloning Practice
 
-Cloning project #1
+Front-end cloning project with basic HTML, CSS, and JS
